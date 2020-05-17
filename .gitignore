@@ -11,7 +11,7 @@ certifi/
 idna/
 bin/
 *.rst
-# LICENSE
+LICENSE
 NOTICE
 elasticsearch5/
 elasticsearch/
