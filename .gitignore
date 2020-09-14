@@ -12,7 +12,9 @@ idna/
 bin/
 *.rst
 LICENSE
+README.md
 NOTICE
+HISTORY.md
 elasticsearch5/
 elasticsearch/
 

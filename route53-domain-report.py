@@ -157,7 +157,7 @@ def do_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--debug", help="print debugging info", action='store_true')
     parser.add_argument("--ssm-param", help="ssm parameter with Antiope configs", default="antiope-aws")
-    parser.add_argument("--es-param", help="ssm parameter with ElasticSearch configs", default="antiope-aws")
+    parser.add_argument("--es-param", help="ssm parameter with ElasticSearch configs", required=True)
     parser.add_argument("--filename", help="Base filename for the output files", default=f"aws-domains-{datetime.datetime.now().strftime('%Y-%m-%d')}.xlsx")
     args = parser.parse_args()
     return(args)
