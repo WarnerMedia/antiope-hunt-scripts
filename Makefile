@@ -14,7 +14,7 @@ deps:
 	$(PIP) install -r requirements.txt -t . --upgrade
 
 clean:
-	rm -rf __pycache__ *.zip *.dist-info HISTORY.rst bin README.rst  NOTICE bin $(DEPENDENCIES)
+	rm -rf __pycache__ *.zip *.dist-info HISTORY.rst HISTORY.md bin README.rst  NOTICE bin $(DEPENDENCIES)
 
 test: $(FILES)
 	for f in $^; do $(PYTHON) -m py_compile $$f; if [ $$? -ne 0 ] ; then echo "$$f FAILS" ; exit 1; fi done
